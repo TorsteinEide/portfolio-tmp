@@ -1,5 +1,5 @@
 interface props {
-  logo: string; // Make into image of some sort
+  logo: string | null;
   color: string;
   title: string;
 }
@@ -8,9 +8,14 @@ const LogoContainer: React.FC<props> = ({ logo, color, title }) => {
   return (
     <div className="text-hover flex flex-col items-center">
       <div
-        className={`border-1 border-accent min-w-14 min-h-14 rounded-md bg-[${color}] flex justify-center items-center `}
+        style={{ backgroundColor: color, borderColor: color }}
+        className={`border-[1.5px] border-accent min-w-16 min-h-16 rounded-md bg-[${color}] flex justify-center items-center `}
       >
-        {logo}
+        {logo != null ? (
+          <img src={logo} alt="Tech logo" className="p-4 size-16" />
+        ) : (
+          title
+        )}
       </div>
       {title}
     </div>
