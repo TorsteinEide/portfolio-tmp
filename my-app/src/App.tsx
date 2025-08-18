@@ -1,22 +1,17 @@
 import Torstein from "./components/sections/torstein";
 import Technologies from "./components/sections/technologies";
+import Experience from "./components/sections/experience";
+import Projects from "./components/sections/projects";
 
 function App() {
-  const checkscroll = () => {
-    const element = document.getElementById("root")!;
-    console.log(element.scrollHeight - element.scrollTop);
-  };
-
   return (
-    <div className="flex flex-col h-screen w-screen" id="root">
-      <div className="fixed z-50">
-        <div className="bg-accent">Torstein Eide</div>
-        <button onClick={checkscroll}></button>
-      </div>
+    <div className="flex flex-col h-screen w-screen">
       {/* Main content takes all space above navbar */}
       <main className="flex-grow  overflow-auto ">
         <Torstein></Torstein>
         <Technologies></Technologies>
+        <Experience></Experience>
+        <Projects></Projects>
       </main>
 
       {/* Hovering navbar at the bottom */}
