@@ -17,7 +17,7 @@ const ProjectCard: React.FC<props> = ({
     >
       <div className="col-span-2 flex flex-row justify-between">
         <div>
-          <h2>{title}</h2>
+          <h2 className="pb-4">{title}</h2>
           <p>{description}</p>
         </div>
       </div>

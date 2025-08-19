@@ -4,7 +4,7 @@ import dipslogo from "../../assets/dipslogo.png";
 function Experience() {
   return (
     <div className="flex gap-2 flex-row  p-4 h-fit px-8 text-accent">
-      <div className="py-24 flex flex-row justify-between w-screen">
+      <div className="py-24 flex flex-row justify-between w-screen p-4">
         <div className="w-full gap-4 flex flex-col">
           <ExperienceCard
             title="Part Time"
