@@ -7,15 +7,6 @@ function Experience() {
       <div className="py-24 flex flex-row justify-between w-screen">
         <div className="w-full gap-4 flex flex-col">
           <ExperienceCard
-            title="Summer Intern"
-            company="DIPS AS"
-            logo={dipslogo}
-            description="Developed a web application to view hospital patient data."
-            startDate={"June 2024"}
-            endDate={"August 2024"}
-            technologies={["TypeScript", "REACT", "Tailwind CSS"]}
-          ></ExperienceCard>
-          <ExperienceCard
             title="Part Time"
             company="DIPS AS"
             logo={dipslogo}
@@ -23,6 +14,16 @@ function Experience() {
             startDate={"August 2024"}
             endDate={"june 2025"}
             technologies={["C#", ".NET"]}
+          ></ExperienceCard>
+
+          <ExperienceCard
+            title="Summer Intern"
+            company="DIPS AS"
+            logo={dipslogo}
+            description="Developed a web application to view hospital patient data."
+            startDate={"June 2024"}
+            endDate={"August 2024"}
+            technologies={["TypeScript", "REACT", "Tailwind CSS"]}
           ></ExperienceCard>
         </div>
         <div className="w-full flex justify-end text-hover">

@@ -21,37 +21,41 @@ function Technologies() {
           <div className="flex flex-wrap w-100 h-100 justify-evenly gap-8">
             <LogoContainer
               logo={cslogo}
-              color="rgba(104, 33, 122, 0.5)"
+              size="w-24 h-24"
+              color="rgba(104, 33, 122, 0.2)"
               title="C#"
             />
             <LogoContainer
               logo={figmalogo}
-              color="rgba(242, 78, 30, 0.5)"
+              size="w-10 h-10"
+              color="rgba(242, 78, 30, 0.3)"
               title="Figma"
             />
             <LogoContainer
               logo={null}
-              color="rgba(81, 43, 212, 0.5)"
+              color="rgba(81, 43, 212, 0.3)"
               title=".NET"
             />
             <LogoContainer
               logo={javalogo}
-              color="rgba(237, 139, 0, 0.5)"
+              size="h-12 w-12"
+              color="rgba(237, 139, 0, 0.3)"
               title="Java"
             />
             <LogoContainer
               logo={tslogo}
-              color="rgba(49, 120, 198, 0.5)"
+              color="rgba(49, 120, 198, 0.3)"
               title="TypeScript"
             />
             <LogoContainer
               logo={tailwindlogo}
-              color="rgba(56, 178, 172, 0.5)"
+              color="rgba(56, 178, 172, 0.2)"
               title="Tailwind"
             />
             <LogoContainer
               logo={unitylogo}
-              color="rgba(0, 0, 0, 0.5)"
+              size="h-14 w-14"
+              color="rgba(0, 0, 0, 0.2)"
               title="Unity"
             />
             <LogoContainer
@@ -61,12 +65,12 @@ function Technologies() {
             />
             <LogoContainer
               logo={springbootlogo}
-              color="rgba(109, 179, 255, 0.5)"
+              color="rgba(50, 220, 179,  0.3)"
               title="Spring"
             />
             <LogoContainer
               logo={reactlogo}
-              color="rgba(97, 218, 251, 0.5)"
+              color="rgba(97, 218, 251, 0.2)"
               title="REACT"
             />
           </div>
