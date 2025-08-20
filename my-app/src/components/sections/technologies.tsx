@@ -11,7 +11,10 @@ import tslogo from "../../assets/tslogo.png";
 
 function Technologies() {
   return (
-    <div className="flex gap-2 flex-row  p-4 h-fit bg-off-bg px-12">
+    <div
+      id="technologies"
+      className="flex gap-2 flex-row  p-4 h-fit bg-off-bg px-12"
+    >
       <div className="py-24 flex flex-row justify-between w-screen">
         <div>
           <h2 className="text-hover p-2">Technologies</h2>

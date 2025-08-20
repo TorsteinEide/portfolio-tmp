@@ -3,8 +3,13 @@ import CircularText from "../circularText";
 
 function Torstein() {
   return (
-    <div className="flex-row flex w-screen justify-between h-screen p-48 px-8 bg-bg">
-      <div className="flex gap-2 flex-col p-4 ">
+    <div
+      id="home"
+      className="flex-row flex w-screen justify-between h-screen p-48 px-8 bg-bg"
+    >
+      <div className="flex gap-2 flex-col p-4 -translate-y-8">
+        <h2 className="text-accent w-fit rounded-xs pl-2 ">Hi, im</h2>
+
         <h1 className="bg-accent w-fit p-2 rounded-xs text-bg">
           Torstein Eide
         </h1>
@@ -25,8 +30,8 @@ function Torstein() {
           </button>
         </div>
       </div>
-      <div className="w-72 h-72 bg-off-bg rounded-full mx-12 text-accent flex justify-center items-center p-2">
-        <CircularText text="Hello!"></CircularText>
+      <div className="w-96 h-96 -translate-y-8 bg-off-bg border-[2px] border-accent rounded-full mx-12 text-accent flex justify-center items-center p-2">
+        <CircularText text=""></CircularText>
       </div>
     </div>
   );
