@@ -3,7 +3,7 @@ import CircularText from "../circularText";
 
 function Torstein() {
   return (
-    <div className="flex-row flex w-screen justify-between h-screen translate-y-42 px-8 ">
+    <div className="flex-row flex w-screen justify-between h-screen p-48 px-8 bg-bg">
       <div className="flex gap-2 flex-col p-4 ">
         <h1 className="bg-accent w-fit p-2 rounded-xs text-bg">
           Torstein Eide

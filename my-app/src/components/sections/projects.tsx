@@ -6,7 +6,7 @@ import LanguageLandPresentation from "../projects/languageland";
 
 function Projects() {
   return (
-    <div className="flex gap-2 flex-row bg-off-bg p-4 h-fit px-12 text-hover">
+    <div className="flex gap-2 flex-row bg-off-bg p-4 h-fit px-12 text-hover ">
       <div className="py-24 flex flex-col justify-between w-screen gap-16">
         <h1>Projects</h1>
         <div className="flex flex-wrap gap-4">

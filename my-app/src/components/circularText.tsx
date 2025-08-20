@@ -1,4 +1,4 @@
-import torstein from "../assets/Torstein-transparent.png";
+import torsteinnew from "../assets/torstein-2025.png";
 
 interface Props {
   text: string;
@@ -9,11 +9,11 @@ const CircularText: React.FC<Props> = ({ text }) => {
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       {/* Image first so text is on top */}
       <image
-        href={torstein}
-        x="5"
-        y="9"
-        width="90"
-        height="90"
+        href={torsteinnew}
+        x="-5"
+        y="-4"
+        width="110"
+        height="110"
         clipPath="circle(40px at center)"
       />
 
