@@ -5,7 +5,7 @@ function Torstein() {
   return (
     <div
       id="home"
-      className="flex-row flex w-screen justify-between h-screen p-48 px-8 bg-bg"
+      className="flex-row flex w-screen justify-between h-screen p-48 px-8 bg-bg 2xl:px-56"
     >
       <div className="flex gap-2 flex-col p-4 -translate-y-8">
         <h2 className="text-accent w-fit rounded-xs pl-2 ">Hi, im</h2>

@@ -8,7 +8,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="flex gap-2 flex-row bg-off-bg p-4 h-fit px-12 text-hover "
+      className="flex gap-2 flex-row bg-off-bg p-4 h-fit px-12 text-hover 2xl:px-56"
     >
       <div className="py-24 flex flex-col justify-between w-screen gap-16">
         <h1>Projects</h1>

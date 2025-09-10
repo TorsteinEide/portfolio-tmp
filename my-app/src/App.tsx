@@ -6,10 +6,6 @@ import Footer from "./components/footer";
 import { Link, Element } from "react-scroll";
 
 function App() {
-  const activate = (to: string) => {
-    console.log("active: ", to);
-  };
-
   return (
     <div className="flex flex-col h-screen w-screen">
       {/* Main content takes all space above navbar */}
@@ -21,12 +17,12 @@ function App() {
           <Technologies></Technologies>
           <Experience></Experience>
           <Projects></Projects>
+          {/*
+          <Footer />
+          */}
         </div>
-        {/* This empty space should allow clicks to pass through to footer */}
-        <div className="h-[45rem]  pointer-events-none relative "></div>
       </main>
 
-      <Footer />
       {/* Hovering navbar at the bottom */}
       <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-[var(--color-nav)] bg-opacity-90 shadow-lg rounded-xs px-6 py-3 flex space-x-8 items-center w-fit justify-evenly z-20">
         <Link

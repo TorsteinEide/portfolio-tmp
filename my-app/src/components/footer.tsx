@@ -2,7 +2,7 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 function Footer() {
   return (
-    <div className="absolute bottom-0 left-0 w-full h-fit bg-bg flex justify-between pt-4 px-2 pb-24 flex-col  items-center pointer-events-none">
+    <div className="w-full h-fit bg-bg flex justify-between pt-24 px-2 pb-48 flex-col  items-center pointer-events-none">
       <div className="w-full h-fit px-8 items-center flex justify-center flex-col gap-4">
         <h3 className="text-accent pt-8">Still Here?</h3>
         <h2 className="text-hover pb-4 mb-8">Contact me</h2>
