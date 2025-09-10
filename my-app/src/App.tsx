@@ -2,8 +2,8 @@ import Torstein from "./components/sections/torstein";
 import Technologies from "./components/sections/technologies";
 import Experience from "./components/sections/experience";
 import Projects from "./components/sections/projects";
-import Footer from "./components/footer";
 import { Link, Element } from "react-scroll";
+//import Footer from "./components/footer";
 
 function App() {
   return (
