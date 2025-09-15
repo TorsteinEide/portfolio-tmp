@@ -21,7 +21,11 @@ const ExperienceCard: React.FC<props> = ({
     <div
       className={`border-[1.5px] border-accent  rounded-xs bg-off-bg flex flex-row p-4 gap-4`}
     >
-      <img src={logo} alt="Experience Logo" className="max-w-24 max-h-24" />
+      {logo == null ? (
+        <div></div>
+      ) : (
+        <img src={logo} alt="Experience Logo" className="max-w-24 max-h-24" />
+      )}
       <div>
         <h3 className="text-hover">
           {company} - {title}

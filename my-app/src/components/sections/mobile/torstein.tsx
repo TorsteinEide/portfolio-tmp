@@ -19,7 +19,7 @@ export const Torstein = () => {
       <div className="flex gap-2 flex-col items-center p-4 -translate-y-8 ">
         <h2 className="text-accent w-fit rounded-xs pl-2 ">Hi, im</h2>
 
-        <h1 className="bg-accent w-fit p-2 rounded-xs text-bg">
+        <h1 className="bg-accent w-fit p-2 rounded-xs text-bg text-center">
           Torstein Eide
         </h1>
         <h2 className="text-accent w-fit rounded-xs pl-2 pt-6 text-center">

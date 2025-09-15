@@ -21,7 +21,7 @@ export const Experience = () => {
           <ExperienceCard
             title="Part Time"
             company="DIPS AS"
-            logo={dipslogo}
+            logo={null}
             description="Handled a range of development tasks including bug fixes, feature implementation, and code quality improvements"
             startDate={"August 2024"}
             endDate={"june 2025"}
@@ -31,7 +31,7 @@ export const Experience = () => {
           <ExperienceCard
             title="Summer Intern"
             company="DIPS AS"
-            logo={dipslogo}
+            logo={null}
             description="Developed a web application to view hospital patient data."
             startDate={"June 2024"}
             endDate={"August 2024"}
