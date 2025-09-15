@@ -5,9 +5,18 @@ export const Experience = () => {
   return (
     <div
       id="experience"
-      className="flex gap-2 flex-row  p-4 h-fit px-8 text-accent bg-bg 2xl:px-56"
+      className="flex gap-2 flex-col p-4 h-fit px-8 text-accent bg-bg 2xl:px-56"
     >
-      <div className="py-24 flex flex-row justify-between w-screen p-4 gap-16">
+      <div className="py-24 flex flex-col justify-between  p-4 gap-6">
+        <div className="w-full flex  text-hover flex-col p-2">
+          <h1 className="text-hover p-2 text-center">Experience</h1>
+          <p className=" text-accent text-center">
+            I’ve worked on fullstack projects, building both web frontends and
+            backend services. Along the way, I’ve learned to tackle problems,
+            work well with others, and improve the app to better meet users’
+            needs.
+          </p>
+        </div>
         <div className="w-full gap-4 flex flex-col">
           <ExperienceCard
             title="Part Time"
@@ -28,15 +37,6 @@ export const Experience = () => {
             endDate={"August 2024"}
             technologies={["TypeScript", "REACT", "Tailwind CSS"]}
           ></ExperienceCard>
-        </div>
-        <div className="w-full flex justify-start items-end text-hover flex-col max-w-96 p-2">
-          <h1 className="text-hover p-2">Experience</h1>
-          <p className="text-right text-accent">
-            I’ve worked on fullstack projects, building both web frontends and
-            backend services. Along the way, I’ve learned to tackle problems,
-            work well with others, and improve the app to better meet users’
-            needs.
-          </p>
         </div>
       </div>
     </div>

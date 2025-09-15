@@ -13,19 +13,19 @@ export const Technologies = () => {
   return (
     <div
       id="technologies"
-      className="flex gap-2 flex-row  p-4 h-fit bg-off-bg  2xl:px-56"
+      className="flex gap-2 flex-row  p-4 h-fit bg-off-bg  2xl:px-56 w-screen"
     >
-      <div className="py-24 flex flex-row justify-between w-screen ">
+      <div className="py-24 flex flex-col justify-between w-screen ">
         <div>
-          <h2 className="text-hover p-2">Technologies</h2>
-          <p className="text-accent p-2 max-w-96">
+          <h2 className="text-hover p-2 text-center">Technologies</h2>
+          <p className="text-accent p-2 max-w-96 text-center">
             I’m a fullstack developer building applications that are fast,
             intuitive, and easy to maintain. I enjoy writing clean code and
             making different technologies work smoothly together.
           </p>
         </div>
         <div>
-          <div className="flex flex-wrap w-100 h-100 justify-evenly gap-8">
+          <div className="flex flex-wrap justify-evenly gap-8 pt-6">
             <LogoContainer
               logo={cslogo}
               size="w-24 h-24"
