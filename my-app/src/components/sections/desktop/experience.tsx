@@ -1,7 +1,7 @@
-import ExperienceCard from "../experienceCard";
-import dipslogo from "../../assets/dipslogo.png";
+import ExperienceCard from "../../experienceCard";
+import dipslogo from "../../../assets/dipslogo.png";
 
-function Experience() {
+export const Experience = () => {
   return (
     <div
       id="experience"
@@ -41,6 +41,4 @@ function Experience() {
       </div>
     </div>
   );
-}
-
-export default Experience;
+};

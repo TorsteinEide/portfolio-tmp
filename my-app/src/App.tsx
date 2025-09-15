@@ -1,73 +1,50 @@
-import Torstein from "./components/sections/torstein";
-import Technologies from "./components/sections/technologies";
-import Experience from "./components/sections/experience";
-import Projects from "./components/sections/projects";
-import { Link, Element } from "react-scroll";
+import { Torstein as DesktopTorstein } from "./components/sections/desktop/torstein";
+import { Technologies as DesktopTechnologies } from "./components/sections/desktop/technologies";
+import { Experience as DesktopExperience } from "./components/sections/desktop/experience";
+import { Projects as DesktopProjects } from "./components/sections/desktop/projects.tsx";
+
+import { Torstein as MobileTorstein } from "./components/sections/mobile/torstein";
+import { Technologies as MobileTechnologies } from "./components/sections/mobile/technologies";
+import { Experience as MobileExperience } from "./components/sections/mobile/experience";
+import { Projects as MobileProjects } from "./components/sections/mobile/projects";
+
+import DesktopNavBar from "./components/navbars/desktopNavBar.tsx";
+import MobileNavBar from "./components/navbars/mobileNavBar.tsx";
 //import Footer from "./components/footer";
+import { useWindowWidth } from "@react-hook/window-size";
 
 function App() {
+  const windowWidth = useWindowWidth();
+
   return (
     <div className="flex flex-col h-screen w-screen">
       {/* Main content takes all space above navbar */}
       <main className="flex-grow overflow-auto relative" id="scroll-container">
-        <div className="relative z-10">
-          <Torstein></Torstein>
-          <Technologies></Technologies>
-          <Experience></Experience>
-          <Projects></Projects>
-          {/*
+        {windowWidth >= 640 ? (
+          <div className="relative z-10">
+            <DesktopTorstein></DesktopTorstein>
+            <DesktopTechnologies></DesktopTechnologies>
+            <DesktopExperience></DesktopExperience>
+            <DesktopProjects></DesktopProjects>
+            {/*
           <Footer />
           */}
-        </div>
+          </div>
+        ) : (
+          <div className="relative z-10">
+            <MobileTorstein></MobileTorstein>
+            <MobileTechnologies></MobileTechnologies>
+            <MobileExperience></MobileExperience>
+            <MobileProjects></MobileProjects>
+            {/*
+          <Footer />
+          */}
+          </div>
+        )}
       </main>
 
       {/* Hovering navbar at the bottom */}
-      <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-[var(--color-nav)] bg-opacity-90 shadow-lg rounded-xs px-6 py-3 flex space-x-8 items-center w-fit justify-evenly z-20">
-        <Link
-          to="home"
-          spy={true}
-          smooth="easeInOutQuart"
-          offset={-70}
-          containerId="scroll-container"
-          duration={750}
-          className="cursor-pointer hover:bg-nav-hover hover:text-white! px-4 py-2 rounded-xs transition-all duration-[0.25s]"
-        >
-          Home
-        </Link>
-        <Link
-          to="technologies"
-          spy={true}
-          smooth="easeInOutQuart"
-          offset={-70}
-          containerId="scroll-container"
-          duration={750}
-          className="cursor-pointer hover:bg-nav-hover hover:text-white! px-4 py-2 rounded-xs transition-all duration-[0.25s]"
-        >
-          Technoloies
-        </Link>
-        <Link
-          to="experience"
-          spy={true}
-          smooth="easeInOutQuart"
-          offset={-70}
-          containerId="scroll-container"
-          duration={750}
-          className="cursor-pointer hover:bg-nav-hover hover:text-white! px-4 py-2 rounded-xs transition-all duration-[0.25s]"
-        >
-          Experience
-        </Link>
-        <Link
-          to="projects"
-          spy={true}
-          smooth="easeInOutQuart"
-          offset={70}
-          containerId="scroll-container"
-          duration={750}
-          className="cursor-pointer hover:bg-nav-hover hover:text-white! px-4 py-2 rounded-xs transition-all duration-[0.25s]"
-        >
-          Projects
-        </Link>
-      </nav>
+      {windowWidth >= 640 ? <DesktopNavBar /> : <MobileNavBar />}
     </div>
   );
 }

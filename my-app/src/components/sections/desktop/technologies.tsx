@@ -1,15 +1,15 @@
-import LogoContainer from "../logoContainer";
-import cslogo from "../../assets/cslogo.png";
-import godotlogo from "../../assets/godotlogo.png";
-import javalogo from "../../assets/javalogo.png";
-import reactlogo from "../../assets/reactlogo.png";
-import unitylogo from "../../assets/unitylogo.png";
-import tailwindlogo from "../../assets/tailwindlogo.png";
-import springbootlogo from "../../assets/springbootlogo.png";
-import figmalogo from "../../assets/figmalogo.png";
-import tslogo from "../../assets/tslogo.png";
+import LogoContainer from "../../logoContainer";
+import cslogo from "../../../assets/cslogo.png";
+import godotlogo from "../../../assets/godotlogo.png";
+import javalogo from "../../../assets/javalogo.png";
+import reactlogo from "../../../assets/reactlogo.png";
+import unitylogo from "../../../assets/unitylogo.png";
+import tailwindlogo from "../../../assets/tailwindlogo.png";
+import springbootlogo from "../../../assets/springbootlogo.png";
+import figmalogo from "../../../assets/figmalogo.png";
+import tslogo from "../../../assets/tslogo.png";
 
-function Technologies() {
+export const Technologies = () => {
   return (
     <div
       id="technologies"
@@ -85,6 +85,4 @@ function Technologies() {
       </div>
     </div>
   );
-}
-
-export default Technologies;
+};

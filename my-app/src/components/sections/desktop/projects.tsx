@@ -1,10 +1,10 @@
-import DashDotPresentation from "../projects/dashdot";
-import DailyDinnerPresentation from "../projects/dailydinner";
-import SecurePlayerDataPresentation from "../projects/SPD";
-import XXSPresentation from "../projects/xxs";
-import LanguageLandPresentation from "../projects/languageland";
+import DashDotPresentation from "../../projects/dashdot";
+import DailyDinnerPresentation from "../../projects/dailydinner";
+import SecurePlayerDataPresentation from "../../projects/SPD";
+import XXSPresentation from "../../projects/xxs";
+import LanguageLandPresentation from "../../projects/languageland";
 
-function Projects() {
+export const Projects = () => {
   return (
     <div
       id="projects"
@@ -22,6 +22,4 @@ function Projects() {
       </div>
     </div>
   );
-}
-
-export default Projects;
+};
