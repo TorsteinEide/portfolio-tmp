@@ -11,9 +11,7 @@ function App() {
       {/* Main content takes all space above navbar */}
       <main className="flex-grow overflow-auto relative" id="scroll-container">
         <div className="relative z-10">
-          <Element name="home">
-            <Torstein></Torstein>
-          </Element>
+          <Torstein></Torstein>
           <Technologies></Technologies>
           <Experience></Experience>
           <Projects></Projects>
