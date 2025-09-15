@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export const Torstein = () => {
   const handleNavigate = (navigation: number) => {
