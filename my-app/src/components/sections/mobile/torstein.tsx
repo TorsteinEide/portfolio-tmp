@@ -1,20 +1,11 @@
 import { Mail, Github, Linkedin } from "lucide-react";
 
-enum navigationLocations {
-  github,
-  linkedin,
-  mail,
-}
-
 export const Torstein = () => {
-  const handleNavigate = (navigation: navigationLocations) => {
-    if (navigation == navigationLocations.github) {
+  const handleNavigate = (navigation: number) => {
+    if (navigation == 0) {
       window.location.href = "https://github.com/TorsteinEide";
     }
-    if (navigation == navigationLocations.mail) {
-      window.location.href = "mailto:torstein_eide@hotmail.com";
-    }
-    if (navigation == navigationLocations.linkedin) {
+    if (navigation == 2) {
       window.location.href =
         "https://www.linkedin.com/in/torstein-eide-b744a821b/";
     }
@@ -36,17 +27,19 @@ export const Torstein = () => {
         </h2>
 
         <div className="flex flex-row gap-2 pl-2 pt-6">
+          {/*
           <button
             className="bg-accent flex flex-row gap-2 justify-center items-center"
-            onClick={() => handleNavigate(navigationLocations.mail)}
+            onClick={() => handleNavigate(1)}
           >
             <Mail size={18} />
             Contact
           </button>
-          <button onClick={() => handleNavigate(navigationLocations.github)}>
+          */}
+          <button onClick={() => handleNavigate(0)}>
             <Github size={18} />
           </button>
-          <button onClick={() => handleNavigate(navigationLocations.linkedin)}>
+          <button onClick={() => handleNavigate(2)}>
             <Linkedin size={18} />
           </button>
         </div>
