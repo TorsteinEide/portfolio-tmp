@@ -1,7 +1,25 @@
 import { Mail, Github, Linkedin } from "lucide-react";
 import CircularText from "../../circularText";
 
+enum navigationLocations {
+  github,
+  linkedin,
+  mail,
+}
+
 export const Torstein = () => {
+  const handleNavigate = (navigation: navigationLocations) => {
+    if (navigation == navigationLocations.github) {
+      window.location.href = "https://github.com/TorsteinEide";
+    }
+    if (navigation == navigationLocations.mail) {
+      window.location.href = "mailto:torstein_eide@hotmail.com";
+    }
+    if (navigation == navigationLocations.linkedin) {
+      window.location.href =
+        "https://www.linkedin.com/in/torstein-eide-b744a821b/";
+    }
+  };
   return (
     <div
       id="home"
@@ -18,14 +36,17 @@ export const Torstein = () => {
         </h2>
         <h3 className="text-accent pl-2">Graduate from NTNU Norway</h3>
         <div className="flex flex-row gap-2 pl-2 pt-6">
-          <button className="bg-accent flex flex-row gap-2 justify-center items-center">
+          <button
+            className="bg-accent flex flex-row gap-2 justify-center items-center"
+            onClick={() => handleNavigate(navigationLocations.mail)}
+          >
             <Mail size={18} />
             Contact
           </button>
-          <button>
+          <button onClick={() => handleNavigate(navigationLocations.github)}>
             <Github size={18} />
           </button>
-          <button>
+          <button onClick={() => handleNavigate(navigationLocations.linkedin)}>
             <Linkedin size={18} />
           </button>
         </div>

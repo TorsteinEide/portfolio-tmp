@@ -13,7 +13,7 @@ const ProjectCard: React.FC<props> = ({
 }) => {
   return (
     <div
-      className={`grid grid-cols-2 grid-row-3 bg-bg p-4 rounded-xs gap-4 border-[1.5px] border-accent overflow-hidden h-fill w-[49%]`}
+      className={`grid grid-cols-2 grid-row-3 bg-bg p-4 rounded-xs gap-4 border-[1.5px] border-accent overflow-hidden h-fill sm:w-[49%] w-full`}
     >
       <div className="col-span-2 flex flex-row justify-between">
         <div>

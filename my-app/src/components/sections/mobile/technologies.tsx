@@ -15,7 +15,7 @@ export const Technologies = () => {
       id="technologies"
       className="flex gap-2 flex-row  p-4 h-fit bg-off-bg  2xl:px-56 w-screen"
     >
-      <div className="py-24 flex flex-col justify-between w-screen ">
+      <div className="py-24 flex flex-col justify-between w-screen items-center">
         <div>
           <h2 className="text-hover p-2 text-center">Technologies</h2>
           <p className="text-accent p-2 max-w-96 text-center">

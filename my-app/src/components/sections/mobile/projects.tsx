@@ -10,9 +10,12 @@ export const Projects = () => {
       id="projects"
       className="flex gap-2 flex-row bg-off-bg p-4 h-fit px-12 text-hover 2xl:px-56"
     >
-      <div className="py-24 flex flex-col justify-between w-screen gap-16">
+      <div className="py-24 flex flex-col items-center gap-6">
         <h1>Projects</h1>
-        <div className="flex flex-wrap gap-4">
+        <p className=" text-accent text-center">
+          Some of the projects i have worked on.
+        </p>
+        <div className="flex flex-wrap gap-4 w-full">
           <DashDotPresentation />
           <DailyDinnerPresentation />
           <SecurePlayerDataPresentation />

@@ -10,7 +10,7 @@ function DesktopNavBar() {
         offset={-70}
         containerId="scroll-container"
         duration={750}
-        className="cursor-pointer hover:bg-nav-hover hover:text-white! py-2 rounded-xs transition-all duration-[0.25s]"
+        className="cursor-pointer hover:bg-nav-hover hover:text-white! px-4 py-2 rounded-xs transition-all duration-[0.25s]"
       >
         Home
       </Link>
@@ -32,7 +32,7 @@ function DesktopNavBar() {
         offset={-70}
         containerId="scroll-container"
         duration={750}
-        className="cursor-pointer hover:bg-nav-hover hover:text-white! py-2 rounded-xs transition-all duration-[0.25s]"
+        className="cursor-pointer hover:bg-nav-hover hover:text-white! px-4 py-2 rounded-xs transition-all duration-[0.25s]"
       >
         Experience
       </Link>
@@ -43,7 +43,7 @@ function DesktopNavBar() {
         offset={70}
         containerId="scroll-container"
         duration={750}
-        className="cursor-pointer hover:bg-nav-hover hover:text-white! py-2 rounded-xs transition-all duration-[0.25s]"
+        className="cursor-pointer hover:bg-nav-hover hover:text-white! px-4 py-2 rounded-xs transition-all duration-[0.25s]"
       >
         Projects
       </Link>
