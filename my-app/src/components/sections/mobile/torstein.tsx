@@ -1,5 +1,4 @@
 import { Mail, Github, Linkedin } from "lucide-react";
-import CircularText from "../../circularText";
 
 enum navigationLocations {
   github,
