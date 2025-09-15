@@ -44,7 +44,7 @@ function App() {
       </main>
 
       {/* Hovering navbar at the bottom */}
-      {windowWidth >= 640 ? <DesktopNavBar /> : <MobileNavBar />}
+      {windowWidth >= 640 ? <DesktopNavBar /> : <div />}
     </div>
   );
 }
