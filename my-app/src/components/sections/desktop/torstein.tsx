@@ -2,7 +2,7 @@ import { Github, Linkedin } from "lucide-react";
 import CircularText from "../../circularText";
 
 export const Torstein = () => {
-  const handleNavigate = (navigation: navigationLocations) => {
+  const handleNavigate = (navigation: number) => {
     if (navigation == 0) {
       window.location.href = "https://github.com/TorsteinEide";
     }
