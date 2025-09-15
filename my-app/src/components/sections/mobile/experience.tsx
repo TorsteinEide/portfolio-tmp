@@ -1,5 +1,4 @@
 import ExperienceCard from "../../experienceCard";
-import dipslogo from "../../../assets/dipslogo.png";
 
 export const Experience = () => {
   return (

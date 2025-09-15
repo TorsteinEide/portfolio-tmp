@@ -1,5 +1,5 @@
 interface props {
-  logo: string;
+  logo: string | null;
   company: string;
   title: string;
   description: string;
