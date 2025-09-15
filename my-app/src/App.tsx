@@ -9,7 +9,6 @@ import { Experience as MobileExperience } from "./components/sections/mobile/exp
 import { Projects as MobileProjects } from "./components/sections/mobile/projects";
 
 import DesktopNavBar from "./components/navbars/desktopNavBar.tsx";
-import MobileNavBar from "./components/navbars/mobileNavBar.tsx";
 //import Footer from "./components/footer";
 import { useWindowWidth } from "@react-hook/window-size";
 
