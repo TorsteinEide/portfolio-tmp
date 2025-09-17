@@ -44,7 +44,7 @@ export const Torstein = () => {
           </button>
         </div>
       </div>
-      {}
+      { }
       <div className="w-96 h-96 -translate-y-8 bg-off-bg border-[2px] border-accent rounded-full mx-12 text-accent flex justify-center items-center p-2">
         <CircularText text=""></CircularText>
       </div>

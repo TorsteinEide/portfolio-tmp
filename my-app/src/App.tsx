@@ -2,6 +2,7 @@ import { Torstein as DesktopTorstein } from "./components/sections/desktop/torst
 import { Technologies as DesktopTechnologies } from "./components/sections/desktop/technologies";
 import { Experience as DesktopExperience } from "./components/sections/desktop/experience";
 import { Projects as DesktopProjects } from "./components/sections/desktop/projects.tsx";
+import Footer from "./components/footer.tsx";
 
 import { Torstein as MobileTorstein } from "./components/sections/mobile/torstein";
 import { Technologies as MobileTechnologies } from "./components/sections/mobile/technologies";
@@ -9,7 +10,6 @@ import { Experience as MobileExperience } from "./components/sections/mobile/exp
 import { Projects as MobileProjects } from "./components/sections/mobile/projects";
 
 import DesktopNavBar from "./components/navbars/desktopNavBar.tsx";
-//import Footer from "./components/footer";
 import { useWindowWidth } from "@react-hook/window-size";
 
 function App() {
@@ -28,6 +28,8 @@ function App() {
             {/*
           <Footer />
           */}
+            <Footer></Footer>
+
           </div>
         ) : (
           <div className="relative z-10">

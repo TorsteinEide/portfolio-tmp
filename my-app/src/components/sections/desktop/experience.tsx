@@ -1,6 +1,6 @@
 import ExperienceCard from "../../experienceCard";
 import dipslogo from "../../../assets/dipslogo.png";
-import { ExperienceDescription } from "./constants";
+import { ExperienceDescription } from "../constants.ts"
 
 export const Experience = () => {
   return (

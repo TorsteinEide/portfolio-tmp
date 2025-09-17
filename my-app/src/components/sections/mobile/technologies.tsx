@@ -8,7 +8,7 @@ import tailwindlogo from "../../../assets/tailwindlogo.png";
 import springbootlogo from "../../../assets/springbootlogo.png";
 import figmalogo from "../../../assets/figmalogo.png";
 import tslogo from "../../../assets/tslogo.png";
-import { TechnologiesDescription } from "../desktop/constants";
+import { TechnologiesDescription } from "../constants";
 
 export const Technologies = () => {
   return (

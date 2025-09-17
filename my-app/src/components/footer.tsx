@@ -1,46 +1,47 @@
-import { Mail, Linkedin, Github } from "lucide-react";
 
+import { Github, Linkedin } from "lucide-react";
 function Footer() {
   return (
-    <div className="w-full h-fit bg-bg flex justify-between pt-24 px-2 pb-48 flex-col  items-center pointer-events-none">
-      <div className="w-full h-fit px-8 items-center flex justify-center flex-col gap-4">
-        <h3 className="text-accent pt-8">Still Here?</h3>
-        <h2 className="text-hover pb-4 mb-8">Contact me</h2>
+    <div className="w-full h-fit bg-bg flex justify-between  flex-col items-center">
+      <div className="w-full h-fit px-8 items-center flex justify-center flex-col gap-4 pb-48">
+        <h2 className="text-accent pt-48">Still Here?</h2>
+        <button className=" mb-8">Contact me</button>
       </div>
-      <div className="w-1/2 flex-col flex justify-left bg-off-bg p-4 gap-6 rounded-xs border-[1.5px] border-accent">
-        <input
-          type="text"
-          placeholder="Name"
-          className="border-[1.5px] rounded-xs border-accent bg-white text-accent! p-2 pointer-events-auto"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="border-[1.5px] rounded-xs border-accent bg-white text-accent! p-2 pointer-events-auto"
-        />
-        <textarea
-          placeholder="Message"
-          className="border-[1.5px] rounded-xs border-accent bg-white text-accent! p-2 pb-24 pointer-events-auto"
-        />
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-row gap-2">
-            <button className="pointer-events-auto  bg-off-bg! hover:scale-150">
-              <Mail size={18} className="text-accent" />
-            </button>
-            <button className="pointer-events-auto  bg-off-bg! hover:scale-150">
-              <Github size={18} className="text-accent" />
-            </button>
-            <button className="pointer-events-auto  bg-off-bg! hover:scale-150">
-              <Linkedin size={18} className="text-accent" />
-            </button>
-          </div>
-          <button className="bg-nav! hover:bg-hover!  pointer-events-auto">
-            Submit
-          </button>
-        </div>
-      </div>
+      <footer className="bg-accent text-white py-12 w-full">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            {/* Navigation Links */}
+            <div className="flex flex-col gap-2">
+              <a href="/" className="hover:text-gray-400">Home</a>
+              <a href="/technologies" className="hover:text-gray-400">Technologies</a>
+              <a href="/projects" className="hover:text-gray-400">Projects</a>
+              <a href="/experience" className="hover:text-gray-400">Experience</a>
+            </div>
 
-      <div className="w-[42%] bg-accent hidden h-16 rounded-xs"></div>
+            {/* Contact Information */}
+            <div className="mb-6 md:mb-0 text-center md:text-left">
+              <p className="mb-2">Bergen, Norway</p>
+              <p className="mb-2">Phone: +47 407 67 045</p>
+              <p>Email: torstein_eide@hotmail.com</p>
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="flex space-x-4 mb-6 md:mb-0">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <Github className="w-6 h-6 hover:text-gray-400" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="w-6 h-6 hover:text-gray-400" />
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+      <div className="bg-hover w-full h-6">
+        <p className="pl-48">all rights reserved</p>
+
+      </div>
     </div>
   );
 }

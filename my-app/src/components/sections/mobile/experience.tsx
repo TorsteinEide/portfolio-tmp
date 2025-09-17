@@ -1,5 +1,5 @@
 import ExperienceCard from "../../experienceCard";
-import { ExperienceDescription } from "../desktop/constants";
+import { ExperienceDescription } from "../constants";
 
 export const Experience = () => {
   return (
