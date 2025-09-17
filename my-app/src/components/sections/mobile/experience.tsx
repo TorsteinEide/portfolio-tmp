@@ -1,4 +1,5 @@
 import ExperienceCard from "../../experienceCard";
+import { ExperienceDescription } from "../desktop/constants";
 
 export const Experience = () => {
   return (
@@ -10,10 +11,7 @@ export const Experience = () => {
         <div className="w-full flex  text-hover flex-col p-2">
           <h1 className="text-hover p-2 text-center">Experience</h1>
           <p className=" text-accent text-center">
-            I’ve worked on fullstack projects, building both web frontends and
-            backend services. Along the way, I’ve learned to tackle problems,
-            work well with others, and improve the app to better meet users’
-            needs.
+            {ExperienceDescription}
           </p>
         </div>
         <div className="w-full gap-4 flex flex-col">

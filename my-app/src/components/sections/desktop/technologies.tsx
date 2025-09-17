@@ -9,6 +9,8 @@ import springbootlogo from "../../../assets/springbootlogo.png";
 import figmalogo from "../../../assets/figmalogo.png";
 import tslogo from "../../../assets/tslogo.png";
 
+import { TechnologiesDescription } from "./constants";
+
 export const Technologies = () => {
   return (
     <div
@@ -19,9 +21,7 @@ export const Technologies = () => {
         <div>
           <h2 className="text-hover p-2">Technologies</h2>
           <p className="text-accent p-2 max-w-96">
-            I’m a fullstack developer building applications that are fast,
-            intuitive, and easy to maintain. I enjoy writing clean code and
-            making different technologies work smoothly together.
+            {TechnologiesDescription}
           </p>
         </div>
         <div>

@@ -1,5 +1,6 @@
 import ExperienceCard from "../../experienceCard";
 import dipslogo from "../../../assets/dipslogo.png";
+import { ExperienceDescription } from "./constants";
 
 export const Experience = () => {
   return (
@@ -32,10 +33,7 @@ export const Experience = () => {
         <div className="w-full flex justify-start items-end text-hover flex-col max-w-96 p-2">
           <h1 className="text-hover p-2">Experience</h1>
           <p className="text-right text-accent">
-            I’ve worked on fullstack projects, building both web frontends and
-            backend services. Along the way, I’ve learned to tackle problems,
-            work well with others, and improve the app to better meet users’
-            needs.
+            {ExperienceDescription}
           </p>
         </div>
       </div>
